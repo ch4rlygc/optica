@@ -201,6 +201,21 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	background-size: cover;
 	-o-background-size: cover;
 }
+
+/*
+@@media only screen and (max-width: 600 px) {
+	.intro {
+		width: 100%;
+		background: url(../img/news/intro-bg6-small.png) center bottom no-repeat;
+		background-color: #e5e5e5;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
+}
+*/
+
 .intro .overlay {
 	background: rgba(0,0,0,0.2);
 }
@@ -442,7 +457,7 @@ header .intro-text {
 /* Contact Section */
 #contact {
 	padding: 100px 0 60px 0;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	background-color: #42a5f5;
 	color: rgba(255,255,255,.75);
 }
 #contact .section-title {
@@ -581,8 +596,32 @@ color: #777;
 	border-bottom: 2px solid #608dfd;
 }
 
-@media (max-width: 768px) {
-#about img {
-	margin: 50px 0;
+/*
+New classes and id's
+*/
+
+#us {
+	width: 100%;
+	height: auto;
+	margin-right: 5%;
 }
+
+@media (max-width: 768px) {
+
+	#about img {
+		margin: 50px 0;
+	}
+
+	.intro {
+		background: url(../img/news/intro-bg-small4.jpg) center bottom no-repeat;
+		width: 100%;
+		height: auto;
+		left: 50%;
+		background-color: #e5e5e5;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
+
 }

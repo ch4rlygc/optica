@@ -194,7 +194,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	display: table;
 	width: 100%;
 	padding: 0;
-	background: url(../img/news/intro-bg6.png) center bottom no-repeat;
+	background: url(../img/intro-bg.png) center bottom no-repeat;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -222,14 +222,14 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .intro h1 {
 	font-family: 'Roboto', sans-serif;
 	color: #fff;
-	font-size: 82px;
-	font-weight: 200;
+	font-size: 80px;
+	font-weight: normal;
 	text-transform: uppercase;
 	margin-top: 0;
-	margin-bottom: 10px;
+	margin-bottom: 12px;
 }
 .intro h1 span {
-	font-weight: 800;
+	font-weight: 300;
 	color: #5ca9fb;
 }
 .intro p {
@@ -622,6 +622,14 @@ New classes and id's
 		-moz-background-size: cover;
 		background-size: cover;
 		-o-background-size: cover;
+	}
+
+	.intro h1 {
+		font-size: 40px;
+	}
+
+	.intro p {
+		font-size: 19px;
 	}
 
 }

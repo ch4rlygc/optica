@@ -625,3 +625,16 @@ New classes and id's
 	}
 
 }
+
+.goUp {
+	display: none;
+	padding: 15px;
+	background: #2196f3;
+	font-size: 22spx;
+	color: #fff;
+	cursor: pointer;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 9000;
+}

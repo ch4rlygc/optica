@@ -3,7 +3,7 @@ function main() {
 
 (function () {
    'use strict';
-   
+
   	$('a.page-scroll').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           var target = $(this.hash);
@@ -18,7 +18,7 @@ function main() {
       });
 
 
-    $('body').scrollspy({ 
+    $('body').scrollspy({
         target: '.navbar-default',
         offset: 80
     });
@@ -31,16 +31,37 @@ function main() {
       $(".navbar-collapse").collapse('hide');
     }
   });
-	
-	
-    // Nivo Lightbox 
+
+
+    // Nivo Lightbox
     $('.portfolio-item a').nivoLightbox({
-            effect: 'slideDown',  
-            keyboardNav: true,                            
+            effect: 'slideDown',
+            keyboardNav: true,
         });
-		
+
 }());
 
 
 }
 main();
+
+//Function for Back to Top button
+
+$(document).ready(function(){
+  $('.goUp').click(function(){
+    $('body, html').animate({
+      scrollTop: '0px'
+    }, 520); //this control the speed
+  });
+
+  $(window).scroll(function(){
+    if( $(this).scrollTop() > 0 ){
+      $('.goUp').slideDown(300);
+    }
+    else {
+      $('.goUp').slideUp(300);
+    }
+
+  });
+
+});

@@ -60,6 +60,6 @@ if(!empty($_POST)){
 		die;
 	}
 
-	$arr = array("status" => "fail", "message" => "Por favor, valide que no es robot");
+	$arr = array("status" => "fail", "message" => "Por favor, valide que no es un robot");
 	print json_encode($arr);
 }
